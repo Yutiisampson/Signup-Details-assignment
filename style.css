@@ -20,7 +20,8 @@ body{
     vertical-align: middle;
     width: 46.5%;
     height: 50px;
-    margin-right: 5px; 
+    margin-right: 5px;
+    background-color: #fff;
 }
 
 .GQ input[type="radio"] , .SR input[type="radio"] {
@@ -62,8 +63,7 @@ body{
     padding: 20px;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 
 form h2 {
@@ -104,7 +104,7 @@ input[type="radio"] {
 .submit input[type="submit"] {
     width: 96%;
     padding: 10px;
-    background-color: #4ec2b8;
+    background-color: #0B715F;
     color: #fff;
     cursor: pointer;
     border-radius: 10px; 
@@ -112,11 +112,10 @@ input[type="radio"] {
 }
 
 .submit input[type="submit"]:hover {
-    background-color: #b9d3d1;
+    background-color: #0eac8f;
     border-radius: 10px; 
 }
 
-/* Add your existing CSS code here */
 
 /* Tablet (max-width: 768px) */
 @media (max-width: 768px) {
