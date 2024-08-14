@@ -4,61 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="signinform.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <h2>Contact Us</h2>
-            <!-- first name -->
-            <div class="personal-details">
-                <label for="1">First Name *</label>
-                <input class="name" type="text" id="1" placeholder="" required>
-            </div>
+    <form action="">
+        <h1>Contact Us</h1>
 
-            <!-- last name -->
-              <div class="personal-details2">
-                <label for="2">Last Name *</label>
-                    <section class="name2"><input class="name" type="text" id="2" placeholder="" required></section>
-                </div>
-                
-            <!-- email -->
-            <div class="email-details">
-                <label for="3">Email Address  *</label>
-                <input type="text" id="3" placeholder="" required>
+        <div class="flex">
+            <div class="form-input">
+                <label for="">First Name *</label>
+                <input type="text" placeholder="" required>
             </div>
+            <div class="form-input">
+                <label for="">Last Name *</label>
+                <input type="text" placeholder="" required>
+            </div>
+        </div>
 
-            <!-- query -->
-            <div class="query">
-                <label for="query">Query Type  *</label>
-                <section class="GQ">
-                    <input type="radio" name="class" id="GQ" required >
-                    <span>General Query</span>
-                </section>
-
-                <section class="SR">
-                 <input type="radio" name="class" id="SR">
-                 <span>Support Request</span>
-                </section>
+        <div class="form-input">
+                <label for="">Email Address  *</label>
+                <input type="email" placeholder="" required>
             </div>
+ 
+            <div class="radio-group">
+                <p>Query Type  *</p>
+                <div class="flex">
+                    <div class="radio-input"> 
+                        <input type="radio" required>
+                        <label for="">General Equiry</label>
+                    </div>
+                    <div class="radio-input"> 
+                        <input type="radio" required>
+                        <label for="">Support Request</label>
+                    </div>
+            </div>
+         </div>
+         
+         <div class="form-input">
+            <label for="">Message  *</label>
+            <textarea id="message" placeholder="" required></textarea>
+         </div>
             
-            <div class="message">
-                <label for="message">Message  *</label>
-                <textarea id="message" rows="5" cols="60" placeholder="" required></textarea>
-            </div>
+          
+         <div class="checkboxes">
+            <input type="checkbox">
+            <label for="">I consent to be contacted by the team  *</label>
+        </div>
+          
+         <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
             
-            <div class="checkboxes">
-                <input type="checkbox" name="terms"  id="terms" required>
-                <label for="terms">I consent to being contacted by the team  *</label>
-            </div>
-            
-            <div class="submit">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
+    </form>
 </body>
 </html>
